@@ -4,11 +4,11 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Profile from "./Pages/Profile";
 import SignIn from "./Pages/SignIn";
-import Signup from "./Pages/Signup";
 import Header from "./components/Header";
+import SignUp from "./Pages/SignUp";
 
 export default function App() {
-  return (
+  return ( 
     <BrowserRouter>
       <Header />
 
@@ -17,7 +17,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/sign-up" element={<Signup />} />
+        <Route path="/sign-up" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   );
